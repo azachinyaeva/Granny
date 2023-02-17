@@ -1,19 +1,13 @@
 #pragma once
-#include "Gran.h"
+#include "Mom.h"
 
-class Dauther : public Granny {
+class Dauther : public Mom {
 
 public:
-    Dauther(string name, string surname, int age) : Granny(name) {
-        this->name = name;
-        this->surname = surname;
-        this->age = age;
-    }
-
+    Dauther(string name, string surname, int age);
     void show();
 
 private:
-    string surname;
     int age;
 
 };

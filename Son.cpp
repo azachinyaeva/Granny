@@ -1,8 +1,13 @@
 #include "Gran.h"
 #include "Son.h"
 
+
+
+    Son::Son(string name, string surname, string eye_color) : Mom(name, surname) {
+        this->eye_color = eye_color;
+    }
+
     void Son::show() {
-        Granny::show();
-        cout << "Фамилия: " << surname << " ";
+        Mom::show();
         cout << "Цвет глаз: " << eye_color;
     }

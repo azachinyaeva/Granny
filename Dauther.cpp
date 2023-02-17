@@ -1,9 +1,12 @@
 #include "Gran.h"
 #include "Dauther.h"
 
+    Dauther::Dauther(string name, string surname, int age) : Mom(name, surname) {
+    this->age = age;
+}
+
     void Dauther::show() {
-        Granny::show();
-        cout << "Фамилия: " << surname << " ";
+        Mom::show();
         cout << "Возраст: " << age;
 
     }

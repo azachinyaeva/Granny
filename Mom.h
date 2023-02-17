@@ -4,14 +4,11 @@
 class Mom : public Granny {
 
 public:
-    Mom(string name, string surname) : Granny(name) {
-        this->name = name;
-        this->surname = surname;
-    }
+    Mom(string name, string surname);
 
     void show();
 
-private:
+protected:
     string surname;
 
 };
