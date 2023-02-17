@@ -5,9 +5,7 @@ using namespace std;
 class Granny {
 
 public:
-    Granny(string name_) {
-        name = name_;
-    }
+    Granny(string name_);
 
     virtual void show();
 
